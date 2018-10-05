@@ -318,8 +318,5 @@ module.exports = {
 
     // eslint#no-unused-vars
     'no-unused-variable': [ true, { 'ignore-pattern': '^_' }],
-
-    // eslint#no-use-before-define
-    // 'no-use-before-declare': true,
   },
 };
