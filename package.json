@@ -22,7 +22,7 @@
     "autod": "^3.0.1",
     "coffee": "^5.1.0",
     "egg-bin": "^1.0.0",
-    "egg-ci": "^1.8.0",
+    "egg-ci": "^1.9.2",
     "eslint": "^5.6.1",
     "eslint-config-egg": "^7.1.0",
     "tslint": "^5.11.0",
@@ -33,5 +33,11 @@
     "url": "https://github.com/eggjs/tslint-config-egg"
   },
   "homepage": "https://github.com/eggjs/tslint-config-egg",
-  "author": "whxaxes <whxaxes@gmail.com>"
+  "author": "whxaxes <whxaxes@gmail.com>",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "ci": {
+    "version": "6, 8, 10"
+  }
 }
