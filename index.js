@@ -289,7 +289,7 @@ module.exports = {
     'ter-arrow-parens': [ true, 'as-needed' ],
 
     // eslint#arrow-spacing
-    'ter-arrow-spacing': [ 'error', { before: true, after: true }],
+    'ter-arrow-spacing': [ true, { before: true, after: true }],
 
     // eslint#no-var
     'no-var-keyword': true,
