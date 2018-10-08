@@ -112,7 +112,7 @@ module.exports = {
 
     // eslint#array-bracket-spacing
     'array-bracket-spacing': [
-      'error',
+      true,
       'always',
       {
         objectsInArrays: false,
@@ -121,10 +121,10 @@ module.exports = {
     ],
 
     // eslint#block-spacing
-    'block-spacing': [ 'error', 'always' ],
+    'block-spacing': [ true, 'always' ],
 
     // eslint#brace-style
-    'brace-style': [ 'error', '1tbs', { allowSingleLine: true }],
+    'brace-style': [ true, '1tbs', { allowSingleLine: true }],
 
     // eslint#camelcase
     'variable-name': false,
@@ -315,8 +315,5 @@ module.exports = {
 
     // eslint#no-shadow
     'no-shadowed-variable': false,
-
-    // eslint#no-unused-vars
-    'no-unused-variable': [ true, { 'ignore-pattern': '^_' }],
   },
 };
