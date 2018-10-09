@@ -265,15 +265,7 @@ module.exports = {
     'use-isnan': true,
 
     // eslint#valid-jsdoc
-    'valid-jsdoc': [
-      true,
-      {
-        prefer: {
-          returns: 'return',
-        },
-        requireReturn: false,
-      },
-    ],
+    'valid-jsdoc': false,
 
     // eslint#valid-typeof
     'valid-typeof': false,
