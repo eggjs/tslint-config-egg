@@ -18,7 +18,7 @@ module.exports = {
     'member-ordering': false,
     'object-literal-sort-keys': false,
     'max-line-length': false,
-    align: [ true, 'arguments', 'parameters' ],
+    align: [ true, 'elements', 'members', 'parameters', 'statements' ],
     'ordered-imports': false,
     'no-duplicate-imports': true,
     'no-implicit-dependencies': false,
