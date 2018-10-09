@@ -34,9 +34,9 @@
   "homepage": "https://github.com/eggjs/tslint-config-egg",
   "author": "whxaxes <whxaxes@gmail.com>",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "ci": {
-    "version": "6, 8, 10"
+    "version": "8, 10"
   }
 }

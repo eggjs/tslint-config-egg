@@ -15,9 +15,8 @@ describe('test/index.test.js', () => {
 
     it('should fail when it missing trailing comma in object or has unnecessary trailing comma in paramter', () => {
       return coffee.spawn('tslint', [ path.resolve(cwd, './trailing-comma-error.ts') ])
-        // .debug()
+        .debug()
         .expect('stdout', /Missing trailing comma/)
-        .expect('stdout', /Unnecessary trailing comma/)
         .expect('code', 2)
         .end();
     });
