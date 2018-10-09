@@ -58,5 +58,77 @@ describe('test/index.test.js', () => {
         .end();
     });
   });
+
+  describe('align', () => {
+    const cwd = path.join(__dirname, 'fixtures/align');
+
+    it('should success with arguments', () => {
+      return coffee.spawn('tslint', [ path.resolve(cwd, './arguments.ts') ])
+        // .debug()
+        .expect('code', 0)
+        .end();
+    });
+
+    it('should success with elements', () => {
+      return coffee.spawn('tslint', [ path.resolve(cwd, './elements.ts') ])
+        // .debug()
+        .expect('code', 0)
+        .end();
+    });
+
+    it('should fail with elements', () => {
+      return coffee.spawn('tslint', [ path.resolve(cwd, './elements-error.ts') ])
+        // .debug()
+        .expect('stdout', /elements are not aligned/)
+        .expect('code', 2)
+        .end();
+    });
+
+    it('should success with members', () => {
+      return coffee.spawn('tslint', [ path.resolve(cwd, './members.ts') ])
+        .debug()
+        .expect('code', 0)
+        .end();
+    });
+
+    it('should fail with members', () => {
+      return coffee.spawn('tslint', [ path.resolve(cwd, './members-error.ts') ])
+        // .debug()
+        .expect('stdout', /members are not aligned/)
+        .expect('code', 2)
+        .end();
+    });
+
+    it('should success with parameters', () => {
+      return coffee.spawn('tslint', [ path.resolve(cwd, './parameters.ts') ])
+        // .debug()
+        .expect('code', 0)
+        .end();
+    });
+
+    it('should fail with parameters', () => {
+      return coffee.spawn('tslint', [ path.resolve(cwd, './parameters-error.ts') ])
+        // .debug()
+        .expect('stdout', /parameters are not aligned/)
+        .expect('code', 2)
+        .end();
+    });
+
+    it('should success with statements', () => {
+      return coffee.spawn('tslint', [ path.resolve(cwd, './statements.ts') ])
+        .debug()
+        .expect('code', 0)
+        .end();
+    });
+
+    it('should fail with statements', () => {
+      return coffee.spawn('tslint', [ path.resolve(cwd, './statements-error.ts') ])
+        // .debug()
+        .expect('stdout', /statements are not aligned/)
+        .expect('code', 2)
+        .end();
+    });
+  });
+
 });
 
