@@ -202,12 +202,7 @@ module.exports = {
 
     // eslint eslint#comma-dangle
     'trailing-comma': [ true, {
-      multiline: {
-        objects: 'always',
-        arrays: 'always',
-        functions: 'never',
-        typeLiterals: 'ignore',
-      },
+      multiline: 'always',
     }],
 
     // eslint#no-cond-assign
