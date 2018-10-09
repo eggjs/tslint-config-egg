@@ -1,6 +1,6 @@
 {
   "name": "tslint-config-egg",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "tslint config for egg",
   "main": "./index.js",
   "files": [

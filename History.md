@@ -1,4 +1,13 @@
 
+1.0.0-alpha.3 / 2018-10-09
+==================
+
+**features**
+  * [[`47c76f3`](http://github.com/eggjs/tslint-config-egg/commit/47c76f35561e35b0087bf67f568171d35ac45a99)] - feat: disable jsdoc (#5) (Haoliang Gao <<sakura9515@gmail.com>>)
+
+**others**
+  * [[`3835423`](http://github.com/eggjs/tslint-config-egg/commit/38354231ae5563fdef885e2aec9b3b1765b46226)] - refactor: always add trailing comma when multiline (#4) (Haoliang Gao <<sakura9515@gmail.com>>)
+
 1.0.0-alpha.2 / 2018-10-09
 ==================
 
