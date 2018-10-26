@@ -28,6 +28,7 @@ module.exports = {
     'max-classes-per-file': false,
     'no-object-literal-type-assertion': false,
     'prefer-object-spread': false,
+    'no-reference': false,
 
     /**
      * eslint best-practices

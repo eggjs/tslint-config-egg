@@ -129,5 +129,15 @@ describe('test/index.test.js', () => {
     });
   });
 
+  describe('reference', () => {
+    const cwd = path.join(__dirname, 'fixtures/reference');
+
+    it('should success with reference', () => {
+      return coffee.spawn('tslint', [ path.resolve(cwd, './index.ts') ])
+        .debug()
+        .expect('code', 0)
+        .end();
+    });
+  });
 });
 
