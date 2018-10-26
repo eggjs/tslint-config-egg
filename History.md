@@ -1,4 +1,10 @@
 
+1.0.0 / 2018-10-26
+==================
+
+**features**
+  * [[`af9baeb`](http://github.com/eggjs/tslint-config-egg/commit/af9baeb5933835176e5bed6572559fa46b12e901)] - feat: allow reference (#6) (Khaidi Chu <<i@2333.moe>>)
+
 1.0.0-alpha.3 / 2018-10-09
 ==================
 
